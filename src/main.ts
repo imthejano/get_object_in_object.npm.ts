@@ -16,13 +16,13 @@ export default function getObjectInObject(
 	if (typeof path == 'string')
 		return getObjectInObject(object, path.split('.'))
 	else {
+		if (!object) return undefined
 		if (path.length <= 0) return undefined
 		if (path.length == 1) return object[path[0]]
 		else {
 			const newObject = object[path[0]]
 			path.shift()
-			if (newObject) return getObjectInObject(newObject, path)
-			else return undefined
+			return getObjectInObject(newObject, path)
 		}
 	}
 }
