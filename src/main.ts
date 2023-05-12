@@ -21,7 +21,8 @@ export default function getObjectInObject(
 		else {
 			const newObject = object[path[0]]
 			path.shift()
-			return getObjectInObject(newObject, path)
+			if (newObject) return getObjectInObject(newObject, path)
+			else return undefined
 		}
 	}
 }
