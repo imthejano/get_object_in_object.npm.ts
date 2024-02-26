@@ -5,7 +5,7 @@ Given a path divided by dots (example: 'foo.bar') you can find an object inside 
 ## Installation
 
 ```bash
-npm install get_object_in_object_imjano
+npm install @imjano/get_object_in_object
 ```
 
 ## Usage
