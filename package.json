@@ -1,6 +1,6 @@
 {
 	"name": "@imjano/get_object_in_object",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Through a dot-separated path (example: 'subObject.foo.bar') you can find an object inside another parent object.",
 	"main": "module/index.js",
 	"scripts": {
